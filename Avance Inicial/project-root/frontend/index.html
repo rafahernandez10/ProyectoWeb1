@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rides</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rides</h1>
+    <div id="form-container">
+        <h2>Add a new ride</h2>
+        <form id="ride-form">
+            <label for="driver">Driver:</label>
+            <input type="text" id="driver" name="driver" required>
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required>
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required>
+            <label for="date">Date:</label>
+            <input type="datetime-local" id="date" name="date" required>
+            <label for="seatsAvailable">Seats Available:</label>
+            <input type="number" id="seatsAvailable" name="seatsAvailable" required>
+            <button type="submit">Add Ride</button>
+        </form>
+    </div>
+    <div id="rides-list"></div>
+    <script src="script.js"></script>
+</body>
+</html>
